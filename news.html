@@ -34,6 +34,76 @@
 </head>
 
 <body>
+    <div class="login df-center">
+        <div class="close_login">
+            <i class="fas fa-times-circle"></i>
+        </div>
+        <form action="">
+            <div class="df-center">
+                <h2 class="ff-secondary text-primary py-3">LOGIN</h1>
+            </div>
+            <div class="mb-3">
+                <label for="nameUser" class="form-label">Name user</label>
+                <input type="text" class="form-control" id="nameUser" aria-describedby="emailHelp"
+                    placeholder="Enter name user...">
+                <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="******">
+            </div>
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+
+            <div class="mb-3 form-check">
+                <label class="form-check-label">Do not have an accountt? <span class="text-primary"
+                        id="here_register">Click here</span></label>
+            </div>
+            <div class="df-center">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="register df-center">
+        <div class="close_register">
+            <i class="fas fa-times-circle"></i>
+        </div>
+        <form action="">
+            <div class="df-center">
+                <h2 class="ff-secondary text-primary py-3">REGISTER</h1>
+            </div>
+            <div class="mb-3">
+                <label for="nameUser" class="form-label">Name user</label>
+                <input type="text" class="form-control" id="nameUser" aria-describedby="emailHelp"
+                    placeholder="Enter name user...">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" aria-describedby="emailHelp"
+                    placeholder="Enter Email...">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="*******">
+            </div>
+            <div class="mb-3">
+                <label for="cofimPass" class="form-label">Enter the password</label>
+                <input type="password" class="form-control" id="cofimPass" placeholder="*******">
+            </div>
+            <div class="mb-3 form-check">
+                <label class="form-check-label">Do you already have an account? <span class="text-primary"
+                        id="here_login">Click here</span></label>
+            </div>
+
+            <div class="df-center">
+                <button type="submit" class="btn btn-primary">REGISTER</button>
+            </div>
+        </form>
+    </div>
+
     <div class="bg-white p-0">
         <!-- Navbar & Hero Start -->
         <div class="position-relative p-0">
@@ -67,8 +137,8 @@
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Account</a>
                             <div class="dropdown-menu m-0">
-                                <a href="#" class="dropdown-item">Login</a>
-                                <a href="#" class="dropdown-item">Register</a>
+                                <a href="#" class="dropdown-item" id="login">Login</a>
+                                <a href="#" class="dropdown-item" id="register">Register</a>
                             </div>
                         </div>
                     </div>

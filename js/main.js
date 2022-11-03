@@ -1,17 +1,45 @@
 (function ($) {
   "use strict";
 
+  // Login
+  $("#login").click(function () {
+    $(".login").addClass("active");
+  });
+
+  $(".close_login").click(function () {
+    $(".login").removeClass("active");
+  });
+
+  // Register
+  $("#register").click(function () {
+    $(".register").addClass("active");
+  });
+
+  $(".close_register").click(function () {
+    $(".register").removeClass("active");
+  });
+
+  // here
+  $('#here_login').click(function () {{
+    $(".register").removeClass('active')
+    $(".login").addClass("active");
+  }})
+  $('#here_register').click(function () {{
+    $(".login").removeClass('active')
+    $(".register").addClass("active");
+  }})
+
   // Button Search
   if (!$(".search .input_search").hasClass("active")) {
     $("#BtnSearch").click(function () {
       $(".search .input_search").toggleClass("active");
     });
 
-    $('.closeSearch').click(function() {
+    $(".closeSearch").click(function () {
       $(".search .input_search").removeClass("active");
-    })
+    });
   }
-  
+
   //cart
   $("#BtnCart").click(function () {
     $("#content-cart").addClass("active");
