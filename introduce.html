@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Restoran - Bootstrap Restaurant Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&family=Pacifico&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="bg-white p-0">
+
+
+        <!-- Navbar & Hero Start -->
+        <div class="position-relative p-0">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 px-lg-5 py-3 py-lg-0 pfixed">
+                <a href="index.html" class="navbar-brand p-0">
+                    <h1 class="text-primary m-0"><i class="fa fa-utensils me-3"></i>Restoran</h1>
+                </a>
+                <div class="df-space-between">
+                    <div class="search df-center">
+                        <div class="input_search df-center">
+                            <input type="text" placeholder="Enter search...">
+                        </div>
+                        <button class="df-center" id="BtnSearch"><i class="fas fa-search"></i></button>
+                    </div>
+                    <div class="cart df-center py-2 px-2" id="BtnCart">
+                        <i class="bi bi-cart4"></i>
+                        <span class="notification df-center">2</span>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarCollapse">
+                        <span class="fa fa-bars"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto py-0 pe-4">
+                        <a href="index.html" class="nav-item nav-link">Home</a>
+                        <a href="menu.html" class="nav-item nav-link">Menu</a>
+                        <a href="news.html" class="nav-item nav-link">News</a>
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                        <a href="introduce.html" class="nav-item nav-link active">Introduce</a>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Account</a>
+                            <div class="dropdown-menu m-0">
+                                <a href="#" class="dropdown-item">Login</a>
+                                <a href="#" class="dropdown-item">Register</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-cart" id="content-cart">
+                    <div class="header_cart row">
+                        <div class="close col-2" id="close">
+                            <i class="fas fa-times-circle"></i>
+                        </div>
+
+                        <h5 class="ff-secondary col-7">CART</h5>
+
+                        <button class="clear df-space-between col-3">
+                            <h6>Clear</h6>
+                            <i class="fas fa-undo"></i>
+                        </button>
+                    </div>
+
+                    <div class="menu_cart">
+                        <div class="menu_cart--content">
+                            <a href="detail.html" class="menu__dish mt-30 row">
+                                <img src="img/menu-1.jpg" alt="" class="col-3">
+
+                                <div class="info col-7">
+                                    <div class="namePrice df-space-between">
+                                        <h6>Chicken Burger</h6>
+                                        <span class="price">
+                                            $ 40
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div class="qty col-2 df-space-between">
+                                    <span class="remove">-</span>
+                                    <span>1</span>
+                                    <span class="add">+</span>
+                                </div>
+                            </a>
+
+                            <a href="detail.html" class="menu__dish mt-30 row">
+                                <img src="img/menu-1.jpg" alt="" class="col-3">
+
+                                <div class="info col-7">
+                                    <div class="namePrice df-space-between">
+                                        <h6>Chicken Burger</h6>
+                                        <span class="price">
+                                            $ 40
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div class="qty col-2 df-space-between">
+                                    <span class="remove">-</span>
+                                    <span>1</span>
+                                    <span class="add">+</span>
+                                </div>
+                            </a>
+
+                            <a href="detail.html" class="menu__dish mt-30 row">
+                                <img src="img/menu-1.jpg" alt="" class="col-3">
+
+                                <div class="info col-7">
+                                    <div class="namePrice df-space-between">
+                                        <h6>Chicken Burger</h6>
+                                        <span class="price">
+                                            $ 40
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div class="qty col-2 df-space-between">
+                                    <span class="remove">-</span>
+                                    <span>1</span>
+                                    <span class="add">+</span>
+                                </div>
+                            </a>
+
+                            <a href="detail.html" class="menu__dish mt-30 row">
+                                <img src="img/menu-1.jpg" alt="" class="col-3">
+
+                                <div class="info col-7">
+                                    <div class="namePrice df-space-between">
+                                        <h6>Chicken Burger</h6>
+                                        <span class="price">
+                                            $ 40
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div class="qty col-2 df-space-between">
+                                    <span class="remove">-</span>
+                                    <span>1</span>
+                                    <span class="add">+</span>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="menu_cart--total df-space-between">
+                            <div class="menu_cart--total__content df-space-between">
+                                <div class="df-space-between">
+                                    <h6>Sub Total: </h6>
+                                    <span class="price">$ 15</span>
+                                </div>
+                                <div class="df-space-between">
+                                    <h6>Delivery: </h6>
+                                    <span class="price">$ 5</span>
+                                </div>
+                            </div>
+
+                            <div class="menu_cart--total__monney df-space-between">
+                                <h4>Total: </h4>
+                                <span class="price">$ 100</span>
+                            </div>
+
+                            <button class="btn btn-secondary"><a href="Order.html">Pay <i class="fas fa-money-check-alt"></i></a></button>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="py-5 bg-dark hero-header mb-5">
+                <div class="container text-center my-5 pt-5 pb-4">
+                    <h1 class="display-3 text-white mb-3 animated slideInDown">Services</h1>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center text-uppercase">
+                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                            <li class="breadcrumb-item"><a href="#">Pages</a></li>
+                            <li class="breadcrumb-item text-white active" aria-current="page">Introduce</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <!-- Navbar & Hero End -->
+
+
+        <!-- About Start -->
+        <div class="py-5">
+            <div class="container">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6">
+                        <div class="row g-3">
+                            <div class="col-6 text-start">
+                                <img class="img-fluid rounded w-100 wow zoomIn" data-wow-delay="0.1s"
+                                    src="img/about-1.jpg">
+                            </div>
+                            <div class="col-6 text-start">
+                                <img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.3s"
+                                    src="img/about-2.jpg" style="margin-top: 25%;">
+                            </div>
+                            <div class="col-6 text-end">
+                                <img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.5s"
+                                    src="img/about-3.jpg">
+                            </div>
+                            <div class="col-6 text-end">
+                                <img class="img-fluid rounded w-100 wow zoomIn" data-wow-delay="0.7s"
+                                    src="img/about-4.jpg">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <h4 class="section-title ff-secondary text-start text-primary fw-normal">About Us</h4>
+                        <h1 class="mb-4">Welcome to <i class="fa fa-utensils text-primary me-2"></i>Restoran</h1>
+                        <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet
+                            diam et eos erat ipsum et lorem et sit, sed stet lorem sit.</p>
+                        <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet
+                            diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna
+                            dolore erat amet</p>
+                        <div class="row g-4 mb-4">
+                            <div class="col-sm-6">
+                                <div class="d-flex align-items-center border-start border-5 border-primary px-3">
+                                    <h1 class="flex-shrink-0 display-5 text-primary mb-0" data-toggle="counter-up">15
+                                    </h1>
+                                    <div class="ps-4">
+                                        <p class="mb-0">Years of</p>
+                                        <h6 class="text-uppercase mb-0">Experience</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="d-flex align-items-center border-start border-5 border-primary px-3">
+                                    <h1 class="flex-shrink-0 display-5 text-primary mb-0" data-toggle="counter-up">50
+                                    </h1>
+                                    <div class="ps-4">
+                                        <p class="mb-0">Popular</p>
+                                        <h6 class="text-uppercase mb-0">Master Chefs</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="btn btn-primary py-3 px-5 mt-2" href="">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About End -->
+
+        <div class="py-5">
+            <div class="container">
+                <h1 class="section-title ff-secondary text-start text-primary fw-normal">Introduce</h1>
+                <div class="info_shop">
+                    <div class="row py-5 wow fadeInRight" data-wow-delay="0.1s">
+                        <div class="col-3">
+                            <img width="100%" src="./img/about-1.jpg" alt="">
+                        </div>
+                        <div class="col-9">
+                            <div class="name">
+                                <h2>Name Introduce</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt labore ex illo
+                                    laborum. Perferendis, quaerat aspernatur fugiat necessitatibus quia beatae tempora
+                                    maiores in magni totam fugit odio facilis autem nulla.Lorem ipsum dolor sit amet
+                                    consectetur adipisicing elit. Nesciunt labore ex illo</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr>
+
+                    <div class="row py-5 wow fadeInLeft" data-wow-delay="0.3s">
+                        <div class="col-9">
+                            <div class="name">
+                                <h2>Name Introduce</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt labore ex illo
+                                    laborum. Perferendis, quaerat aspernatur fugiat necessitatibus quia beatae tempora
+                                    maiores in magni totam fugit odio facilis autem nulla. laborum. Perferendis, quaerat
+                                    aspernatur fugiat necessitatibus quia beatae tempora</p>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <img width="100%" src="./img/about-1.jpg" alt="">
+                        </div>
+                    </div>
+
+                    <hr>
+
+                    <div class="row py-5 wow fadeInRight" data-wow-delay="0.5s">
+                        <div class="col-3">
+                            <img width="100%" src="./img/about-1.jpg" alt="">
+                        </div>
+                        <div class="col-9">
+                            <div class="name">
+                                <h2>Name Introduce</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt labore ex illo
+                                    laborum. Perferendis, quaerat aspernatur fugiat necessitatibus quia beatae tempora
+                                    maiores in magni totam fugit odio facilis autem nulla. maiores in magni totam fugit
+                                    odio facilis autem nulla.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr>
+
+                    <div class="row py-5 wow fadeInLeft" data-wow-delay="0.7s">
+                        <div class="col-9">
+                            <div class="name">
+                                <h2>Name Introduce</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt labore ex illo
+                                    laborum. Perferendis, quaerat aspernatur fugiat necessitatibus quia beatae tempora
+                                    maiores in magni totam fugit odio facilis autem nulla. laborum. Perferendis, quaerat
+                                    aspernatur fugiat necessitatibus quia beatae tempora</p>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <img width="100%" src="./img/about-1.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Footer Start -->
+        <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-lg-3 col-md-6">
+                        <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Company</h4>
+                        <a class="btn btn-link" href="">Home</a>
+                        <a class="btn btn-link" href="">Menu</a>
+                        <a class="btn btn-link" href="">Contact</a>
+                        <a class="btn btn-link" href="">Introduce</a>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Contact</h4>
+                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Ho Tung Mau, Ha Noi, Viet Nam</p>
+                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 6789</p>
+                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>phamductuan@gmail.com</p>
+                        <div class="d-flex pt-2">
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Opening</h4>
+                        <h5 class="text-light fw-normal">Monday - Saturday</h5>
+                        <p>09AM - 09PM</p>
+                        <h5 class="text-light fw-normal">Sunday</h5>
+                        <p>10AM - 08PM</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Newsletter</h4>
+                        <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+                        <div class="position-relative mx-auto" style="max-width: 400px;">
+                            <input class="form-control border-primary w-100 py-3 ps-4 pe-5" type="text"
+                                placeholder="Your email">
+                            <button type="button"
+                                class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="copyright">
+                    <div class="text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a class="border-bottom" href="#">Food Restoran</a>, All Right Reserved.
+                        Designed By Mr.Tuan
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
