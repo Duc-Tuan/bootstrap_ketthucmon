@@ -2,32 +2,43 @@
   "use strict";
 
   // Login
-  $("#login").click(function () {
-    $(".login").addClass("active");
-  });
+  {
+    $("#login").click(function () {
+      $(".login").addClass("active");
+    });
 
-  $(".close_login").click(function () {
-    $(".login").removeClass("active");
-  });
-
+    $(".close_login").click(function () {
+      $(".login").removeClass("active");
+    });
+  }
   // Register
-  $("#register").click(function () {
-    $(".register").addClass("active");
-  });
+  {
+    $("#register").click(function () {
+      $(".register").addClass("active");
+    });
 
-  $(".close_register").click(function () {
-    $(".register").removeClass("active");
-  });
-
+    $(".close_register").click(function () {
+      $(".register").removeClass("active");
+    });
+  }
   // here
-  $('#here_login').click(function () {{
-    $(".register").removeClass('active')
-    $(".login").addClass("active");
-  }})
-  $('#here_register').click(function () {{
-    $(".login").removeClass('active')
-    $(".register").addClass("active");
-  }})
+  {
+    $("#here_login").click(function () {
+      {
+        $(".register").removeClass("active");
+        $(".login").addClass("active");
+      }
+    });
+  }
+
+  {
+    $("#here_register").click(function () {
+      {
+        $(".login").removeClass("active");
+        $(".register").addClass("active");
+      }
+    });
+  }
 
   // Button Search
   if (!$(".search .input_search").hasClass("active")) {
